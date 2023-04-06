@@ -1,0 +1,1 @@
+document.getElementById('paragrafoInvisivel').innerHTML = 'FULL APPEND SYSTEM';
