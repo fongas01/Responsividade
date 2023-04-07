@@ -2,12 +2,7 @@
     --blue:#7126fd;
     --black:#444;
     --light-color:#777;
-    --bg-color:#d8d6d6ec;
-    --border: 1rem solid rgba(0, 0, 0, .04);
-    --box-shadow:.4rem .4rem 1rem  #ccc, 
-                -.4rem -.4rem 1.8rem #fff;
-    --box-shadow-inset:.4rem .4rem 1.rem #ccc inset,
-                        -4rem -4rem 1.8rem #fff inset;   
+    --bg-color:#d8d6d6ec;  
 }
 
 *{
@@ -76,7 +71,7 @@ header{
 
 /* CARD */
 .card{
-   border: solid 1px var(--light-color) ;
+   border: solid 1px var(--bg-color) ;
    border-radius: 3%;
 }
 
@@ -108,7 +103,7 @@ footer p{
 /*********  MEDIA QUERY  **********/
 @media (min-width:450px){
     header{
-        height: 8.2rem;
+        height: 10rem;
        }
 
    .autor img{
@@ -147,25 +142,22 @@ footer p{
    }
 
    .produtos .card{
-    background-color: var(--light-color);
-   }
-
-   .produtos .card img{
-    width: 330px;
+    background-color: var(--bg-color);
    }
  }
 
 @media (min-width:768px){
     .autor img{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5rem;
         /* DESFAZ O DISPLAY FIXED */
         position: absolute;
-   }
+    }
 
    #menu-btn{
-    position: absolute;
-   }
+        position: absolute;
+    }
 
    #paragrafoInvisivel{
         margin-top:2.5rem;
@@ -182,23 +174,25 @@ footer p{
         padding-top: 1.8rem;
     }
 
-    
    .produtos{
-    display:grid;
-    grid-template-columns: 1fr 1fr; 
-    margin: 25px;
-}
+        display:grid;
+        grid-template-columns: 1fr 1fr; 
+        margin: 25px;
+    }
 
     .produtos .card{
-    background-color: white;
+        background-color: white;
+    }
+    .produtos .card img{
+        width:330px;
     }
 }
 
 @media (min-width:991px){
     .autor img{
-        width: 180px;
-        height: 180px;
-   }
+        width: 120px;
+        height: 110px;
+    }
 
    #paragrafoInvisivel{
         margin-left: 21rem;
@@ -217,11 +211,14 @@ footer p{
     .produtos{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr; 
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     
     .produtos .card{
         background-color: white;
     }
+
 }
 
 @media (min-width:1200px){
@@ -231,18 +228,18 @@ footer p{
     }
     
     .autor img{
-        width: 200px;
-        height: 200px;
-        margin-left:14rem;
+        width: 180px;
+        height: 180px;
+        margin-left:5rem;
    }
 
-   #paragrafoInvisivel, #menu-btn{
+    #menu-btn, #paragrafoInvisivel{
         display: none;
     }
 
    .menu ul{
         display: flex;
-        margin-left: 12rem;
+        margin-left: 35rem;
         margin-top: 3.5rem;
    }
 
@@ -258,7 +255,7 @@ footer p{
     }
 
     .produtos{
-        margin-top: 10rem;
+        margin-top: 4rem;
     }
 
     footer p{
