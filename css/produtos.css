@@ -1,0 +1,42 @@
+.produtos{
+    display: ;
+}
+
+
+/* CARD */
+.card{
+    border: solid 1px --bg-color ;
+    border-radius: 3%;
+    margin-top: 20px;
+ }
+ 
+ .card h3, p{
+     padding: .6rem;
+ }
+ 
+ .card img{
+     width: 350px;
+     height: 220px;
+     border-top-left-radius:10%;
+     border-bottom-right-radius:10%;
+ }
+ 
+ .produtos .card #a:active{
+     display:none;
+ }
+ 
+ .produtos{
+    display:grid;
+    grid-template-columns: 1fr; 
+    margin: 25px;
+}
+
+.produtos .card{
+background-color: var(--bg-color);
+}
+
+.produtos .card p:hover{
+color:var(--blue);
+font-size: 1.2rem;
+}
+}
