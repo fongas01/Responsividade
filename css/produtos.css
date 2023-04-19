@@ -1,13 +1,18 @@
 .produtos{
-    display: clear;
-}
+    
+ }
 
+.produtos .card p:hover{
+    color:var(--blue);
+    font-size: 1.2rem;
+}
 
 /* CARD */
 .card{
-    border: solid 1px --bg-color ;
+    border: solid 1px;
     border-radius: 3%;
     margin-top: 20px;
+    margin-bottom: 20px;
  }
  
  .card h3, p{
@@ -16,32 +21,68 @@
  
  .card img{
      width: 350px;
-     height: 220px;
+     height: 200px;
      border-top-left-radius:10%;
      border-bottom-right-radius:10%;
  }
+
+
  
- .produtos .card #a:active{
-     display:none;
- }
- 
- .produtos{
-    display:grid;
-    grid-template-columns: 1fr; 
-    margin: 25px;
+/* EXPOSITOR */
+.expositor{
+    display: flex;
 }
 
-.produtos .card{
-background-color: var(--bg-color);
+.novidades .main{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ; 
+    gap:10px;
+    margin: auto 10px 10px 10px;
 }
 
-.produtos .card p:hover{
-color:var(--blue);
-font-size: 1.2rem;
+.novidades img {
+    width: 200px;
+    height: 170px;
 }
 
-.novidades {
-    width: 300px;
-    height: 250px;
-    border: solid 1px red;
+.saldo, article{
+   text-align: justify;
+    background-color: aqua;
+    margin-bottom: 15px;
+
+}
+
+.saldo img{
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+h4{
+    padding-top: 20px;
+}
+
+article{
+    margin-right: 10px;
+}
+
+h3{
+text-transform:uppercase;
+text-align: center;
+margin: 10px auto 20px auto;
+}
+
+article h4{
+    text-align: center;
+}
+
+article p{
+    margin-right: 10px;
+}
+
+hr{
+    margin-left: 15px;
+    margin-right: 30px;
 }

@@ -64,7 +64,6 @@ header{
     background: var(--bg-color);
 }
 
-
 .blueDiv p{
   padding-top: 1.5rem;
   padding-bottom: 1.7rem;
@@ -138,6 +137,7 @@ footer{
         font-size:.5rem ;
         padding-top: 1.5rem;
    }
+}
 
    
 @media (min-width:768px){
@@ -182,8 +182,6 @@ footer{
         color:var(--blue);
         cursor:pointer;
     }
-
-
 }
 
 @media (min-width:991px){
@@ -221,7 +219,7 @@ footer{
         font-size:1rem ;
         padding-top: 1.8rem;
     }
-
+}
 
 @media (min-width:1200px){
     header{
@@ -281,13 +279,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-
 /* FOOTER */
 
 footer{
@@ -299,3 +290,4 @@ footer{
     text-align: center;
     color:var(--bg-color);
 }
+
