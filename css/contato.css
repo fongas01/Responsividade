@@ -1,3 +1,51 @@
-form{
-    margin-top: 10rem;
+
+form {
+    margin: 15px 0;
+    margin-left: 18rem;
+}
+
+
+form label, form legend {
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 15px;
+    padding: 8px 25px;
+    width: 30%;
+    border-radius: 10px;
+/* S/ as bordas no input 
+    border-left:transparent;
+    border-top:transparent;
+    border-right:transparent; */
+}
+
+.checkbox{
+    margin: 5px 5px 15px 0;
+}
+
+#btn-enviar{
+    background-color: rgb(146, 146, 248);
+    color: rgb(238, 237, 236);
+    cursor: pointer;
+    border: none;
+    margin: 0 0 15px 50px;
+    padding: 8px 25px;
+    width: 20%;
+    border-radius: 10px;
+    /* MUDAR ALGO AO PASSAR O MOUSE */
+    transition: 1s all;
+}
+
+#btn-enviar:hover{
+    background-color:#4307b9;
+    /* Aumenta o tamanho em 20% => 1.2 */
+    transform: scale(1.2);
+}
+
+fieldset{
+    border: transparent;
 }

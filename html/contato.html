@@ -40,45 +40,71 @@
 
 
     <!-- FORMULÁRIO -->
-    <section class="main">
+    <section class="formulario">
 
         <div class="blueDiv"> 
             <p> FULL APPEND SYSTEM </p>
         </div>
 
-        <p action="">
-            <label for="">Nome</label>
-            <input type="text" name="nome" placeholder="Digite o seu nome">
-        
-            <label for="">E-mail</label>
-            <input type="text" name="" id="" placeholder="Digite o seu e-mail">
+        <section class="principal"> 
+            <form>
+                <!-- coloca o nome do ID no for do label -->
+                <label for="fist-name">Nome</label>
+                <input type="text" name="nome" id="fist-name" placeholder="Digite o seu nome" class="input-padrao" required>
+            
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" class="input-padrao" required>
 
-            <label for="">Telefone
-                <input type="text" name="" id="">
-            </label>
+                <label for="phone">Telefone </label>
+                    <input type="number" name="phone" id="phone" placeholder="(xx)xxxx-xxxx" class="input-padrao" required>
+          
+                <label for="message">Mensagem</label>
+                    <textarea name="mensagem" id="message" cols="30" rows="5" placeholder="Digite a sua mensagen" class="input-padrao" required></textarea>
+                
+                <!-- RADIO (name="contato" é p/ funcionar a opção ÚNICA  de escolha)-->
+                <!-- Dentro do FORM, usamos FIELDSET ao invés de DIV; 
+                     Ao contrário de P usamos LEGEND
+                -->
+            
+                <fieldset class="contato">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email" input-padrao>  
+                        Email
+                    </label>
+                    
+                    <label for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                        Telefone
+                    </label>
+                    
+                    <label for="radio-whatsapp">
+                        <!-- Adicionamos o CHECKED-->
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                        Whatsapp
+                    </label> <br>
+                </fieldset>
 
-            <label for="">Mensagem
-                <textarea name="" id="" cols="30" rows="10" placeholder="Digite a sua mwnsagen"></textarea>
-            </label>
+                <!-- DROPDOWN (select)-->
+                <fieldset class="atendimento">
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset> <br>
+              
+                <!-- CHECKBOX -->
+                <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
 
-            <p>Como prefere o nosso contato?</p>
-
-
-            <p>Quaql seu melhor horário para atendimento?</p>
-
-        
-            <p>Horário de atendimento</p>
-            <table></table>
-        </form>
+                <!-- BOTÃO-ENVIAR -->
+                <input type="submit" id="btn-enviar" value="Enviar a menssagem">
+            </form>
+        </section>
     </section>
 
-
-
-
-
-
-
-
+    
     <!-- RODAPÉ -->
     <footer>
         <p>&copy Copyright: Todos os direitos reservados | FULL APPEND SYSTEM - 2023</p>

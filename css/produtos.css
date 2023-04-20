@@ -1,10 +1,9 @@
-.produtos{
-    
- }
 
-.produtos .card p:hover{
+.produtos .card .btn-promo:hover{
     color:var(--blue);
     font-size: 1.2rem;
+    /* Aumenta em X% (20% = 1.2) AO PASSAR O MOUSE e rotaciona em (Y)graus */
+    transform: rotate(xdeg) scale(1.2);
 }
 
 /* CARD */
@@ -13,24 +12,40 @@
     border-radius: 3%;
     margin-top: 20px;
     margin-bottom: 20px;
+    /* ROTACIONA O ITEM em X graus*/
+    transform: rotate(-10deg);
  }
  
- .card h3, p{
-     padding: .6rem;
+ .card h3, .btn-promo{
+    padding: .6rem;
  }
  
- .card img{
-     width: 350px;
-     height: 200px;
-     border-top-left-radius:10%;
-     border-bottom-right-radius:10%;
+ .card img:hover{
+    width: 350px;
+    height: 200px;
+    border-top-left-radius:30%;
+    border-top-right-radius:30%;
+    border-bottom-right-radius:10%;
+    cursor: pointer;
+    transition: 2s all;
  }
 
+ /* Efeito de aumentar o item */
+ .card .btn-promo{
+    transition: 2s all;
+ }
 
- 
 /* EXPOSITOR */
+figure p{
+    margin-bottom: 40px;
+}
+
 .expositor{
     display: flex;
+}
+
+.novidades p{
+    text-align: center;
 }
 
 .novidades .main{
@@ -46,7 +61,7 @@
 }
 
 .saldo, article{
-   text-align: justify;
+    text-align: justify;
     background-color: aqua;
     margin-bottom: 15px;
 
@@ -69,9 +84,9 @@ article{
 }
 
 h3{
-text-transform:uppercase;
-text-align: center;
-margin: 10px auto 20px auto;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 20px auto 30px auto;
 }
 
 article h4{
@@ -79,7 +94,7 @@ article h4{
 }
 
 article p{
-    margin-right: 10px;
+    margin: 10px 20px 20px 0px;
 }
 
 hr{
