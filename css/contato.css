@@ -1,4 +1,5 @@
 
+
 form {
     margin: 15px 0;
     margin-left: 18rem;
@@ -48,4 +49,29 @@ form label, form legend {
 
 fieldset{
     border: transparent;
+}
+
+
+/* TABELA */ 
+
+table{
+    margin: 0px 22% 30px;
+}
+
+
+thead{
+    background:#555555;
+    font-weight:bold ;
+    color: rgb(223, 222, 222);
+    height: 30px;
+}
+
+td, th{
+    border: solid 1px #000000;
+    height: 30px;
+    padding:0 20px;
+}
+
+tbody{
+    background-color: beige;
 }
